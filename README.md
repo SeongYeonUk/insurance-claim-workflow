@@ -263,16 +263,17 @@ RECEIVED
 
 ## 10. 테스트
 
-도메인 단위 테스트와 MySQL 기반 통합 테스트를 수행했습니다.
+도메인 단위 테스트와 Spring Context 테스트, MySQL 기반 통합 테스트를 수행했습니다.
 
 | 테스트 영역 | 테스트 수 |
 |---|---:|
 | Claim Domain | 6 |
 | InsuranceContract Domain | 2 |
+| Spring Context | 1 |
 | ClaimService Integration | 4 |
-| Total | 12 |
+| Total | 13 |
 
-총 12개의 테스트가 정상 통과했습니다.
+총 13개의 테스트가 정상 통과했습니다.
 
 ### 주요 테스트 항목
 
@@ -282,11 +283,11 @@ RECEIVED
 보험기간 검증
 승인금액 검증
 미승인 청구 지급 차단
+Spring Application Context 로딩
 청구 생성 이력 저장
 중복 청구 탐지
 필수서류 누락 처리
 청구 접수부터 지급까지 전체 Workflow
-```
 
 통합 테스트는 별도의 MySQL 테스트 데이터베이스를 사용하여 실제 Repository와 트랜잭션 흐름까지 검증했습니다.
 
