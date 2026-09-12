@@ -1,0 +1,12 @@
+package com.example.insurance.domain.claim;
+
+public enum DocumentType {
+    DIAGNOSIS_CERTIFICATE,
+    MEDICAL_RECEIPT,
+    MEDICAL_DETAIL,
+    HOSPITALIZATION_CERTIFICATE,
+    SURGERY_CERTIFICATE,
+    ACCIDENT_REPORT,
+    DEATH_CERTIFICATE,
+    OTHER
+}
